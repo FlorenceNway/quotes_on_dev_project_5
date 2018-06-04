@@ -1,0 +1,265 @@
+/*!
+Theme Name: Quotes on Dev Starter Theme
+Theme URI: http://underscores.me/
+Author: RED Academy
+Author URI: http://www.redacademy.com
+Description: A WordPress starter theme for the Quotes on Dev project, forked from Underscores.
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags:
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+
+Quotes on Dev Theme is based on Underscores http://underscores.me/, (C) 2012-2015 Automattic, Inc.
+Underscores is distributed under the terms of the GNU GPL v2 or later.
+
+Normalizing styles have been helped along thanks to the fine work of
+Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
+*/
+
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+# Normalize
+# Embedded Fonts
+# Typography
+# Elements
+# Forms
+# Navigation
+	## Links
+	## Menus
+# Accessibility
+# Alignments
+# Clearings
+# Content
+	## Posts and pages
+# Media
+# Page Templates
+	## All Archives Page
+	## Submit a Quote Page
+--------------------------------------------------------------*/
+
+// Imported but not included in the stylesheet.
+
+@import "variables";
+@import "mixins";
+
+// CSS included in style.css.
+
+@import "normalize";
+@import "fonts";
+@import "typography";
+@import "elements";
+@import "forms";
+@import "navigation";
+@import "modules";
+@import "content";
+@import "media";
+@import "page-templates";
+
+body{
+	font-family: $exo;
+	background: #222222;
+	color: #fff;
+	width: 1120px;
+	margin:0 auto;
+
+}
+
+a{
+	text-decoration: none;
+	color:  #00cc00;
+}
+a:visited{
+	color: #00cc00;
+}
+
+.container{
+	width: 350px;
+	margin:0 auto;
+
+}
+
+/*_________Media Query - TABLET_____________*/
+
+@media screen and (min-width: 620px){
+
+
+.container{
+	width: 580px;
+	margin: 0 auto;
+}	
+
+
+/*------------------Logo Header----------------*/
+
+.site-branding{
+				margin: 0 auto;
+
+			img{
+			
+	    		width: 100%;
+			}
+}
+
+/*--------------------Content--------------*/
+
+.site-content{
+	position: relative;
+}
+
+
+ article{		
+ 			padding: 0 30px;
+ 			font-size: 1.2em;
+ 		
+
+ 			.entry-title h2{
+ 				display: inline;
+ 				font-size: 1.1em;
+ 				padding-left: 0px;
+ 			}
+
+		 } 
+
+.show-me-btn{
+				text-align: center;
+
+			#new-quote-button{
+				background: transparent;
+			    box-shadow: none;
+			    text-shadow: none;
+			    color: #0c0;
+			    border: 1px solid #0c0;
+			    padding: 15px 25px;
+			    margin: 0 auto;
+			}
+}
+
+
+/*-----------------------Quotes Archive Page------------------------*/
+	.archive-title{
+		text-align: center;
+	}
+	.authors,.categories,.tags{
+			width: 100%;
+			font-size: 1.25rem;
+	}		
+		h2{
+			padding-left: 40px;
+		}	
+		ul{
+			display: flex;
+			flex-wrap: wrap;
+			list-style: none;
+			margin-left: 0;
+
+			a{
+				padding-right: 11px;
+			}
+		}
+	
+/*-----------------------Submit Quote------------------------*/
+	
+	#quote-submission-form{
+
+		input,textarea{
+			background: transparent;
+			color: #0c0;
+			border: 1px solid #0c0;
+			margin-bottom: 20px;
+		}
+
+		input[type='submit']{
+			box-shadow: unset;
+			text-shadow: unset;
+			font-size: 1em;
+			padding: 10px;
+		}
+	}
+
+	
+	.user-log-in{
+		text-align: center;
+		line-height: 1.75;
+
+		h2{
+			font-size: 2em;
+
+		}
+	}
+
+	
+
+/*-----------------------Footer------------------------*/
+.main-navigation{
+	margin-top: 50px;
+	
+	display: flex;
+	justify-content: flex-end;
+
+	
+	p {
+		margin: 3px 10px 0 0;
+    
+    	a {
+			display: inline;
+			color: #00cc00;
+		}
+	}
+
+
+	ul{
+		width: 100%;
+		display: flex;
+		justify-content: flex-end;
+		
+		li{
+			border-right: 1px solid #fff;
+		}
+
+		li a{
+				padding: 3px 10px;
+			
+		}
+	}
+	
+}
+
+}
+
+
+/*_________Media Query - DESKTOP_____________*/
+
+@media screen and (min-width: 1080px){
+	
+	.container{
+				width: 1080px;
+				margin:0 auto;
+			}
+
+	.site-content:before, .site-content:after{
+				color: #0c0;
+			    font-family: FontAwesome;
+			    font-size: 10em;
+			    line-height: 125px;
+			    position: absolute;
+			    top: 0;
+	}
+
+	.site-content:before{
+				content: "\f10d";
+				left: -175px;
+
+			}
+
+	.site-content:after{
+				content: "\f10e";
+				right: -175px;
+			
+		}
+
+
+}
