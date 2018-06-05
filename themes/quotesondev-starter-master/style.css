@@ -585,6 +585,82 @@ iframe,
 object {
   max-width: 100%; }
 
+/*_________Media Query - DESKTOP_____________*/
+/*@media screen and (min-width: 1080px){
+	
+	.container{
+				width: 1080px;
+				margin:0 auto;
+			}
+
+	.site-content:before, .site-content:after{
+				color: #0c0;
+			    font-family: FontAwesome;
+			    font-size: 10em;
+			    line-height: 125px;
+			    position: absolute;
+			    top: 0;
+	}
+
+	.site-content:before{
+				content: "\f10d";
+				left: -175px;
+
+			}
+
+	.site-content:after{
+				content: "\f10e";
+				right: -175px;
+			
+		}
+
+
+}*/
+/*_________Media Query - TABLET_____________*/
+/*@media screen and (min-width: 620px){
+
+.container{
+		width: 580px;
+		margin: 0 auto;
+}*/
+/*--------------------Content--------------*/
+/*.site-content{
+	position: relative;
+}
+
+
+ article{		
+ 			padding: 0 30px;
+ 			font-size: 1.2em;
+ 		
+
+ 			.entry-title h2{
+ 				display: inline;
+ 				font-size: 1.1em;
+ 				padding-left: 0px;
+ 			}
+
+		 } */
+/*-----------------------Footer------------------------*/
+/*.main-navigation{
+	margin-top: 50px;
+	display: flex;
+	justify-content: flex-end;
+	
+
+	ul{
+		display: flex;
+		justify-content: flex-end;
+
+			li a{
+				padding: 3px 10px;
+				border-right: 1px solid #fff;
+			}
+		
+	}
+	
+	}
+}*/
 /*--------------------------------------------------------------
 # Page Templates
 --------------------------------------------------------------*/
@@ -593,9 +669,7 @@ object {
 body {
   font-family: "Exo", sans-serif;
   background: #222222;
-  color: #fff;
-  width: 1120px;
-  margin: 0 auto; }
+  color: #fff; }
 
 a {
   text-decoration: none;
@@ -605,103 +679,94 @@ a:visited {
   color: #00cc00; }
 
 .container {
-  width: 350px;
+  width: 330px;
   margin: 0 auto; }
 
-/*_________Media Query - TABLET_____________*/
-@media screen and (min-width: 620px) {
-  .container {
-    width: 580px;
-    margin: 0 auto; }
-  /*------------------Logo Header----------------*/
-  .site-branding {
-    margin: 0 auto; }
-    .site-branding img {
-      width: 100%; }
-  /*--------------------Content--------------*/
-  .site-content {
-    position: relative; }
-  article {
-    padding: 0 30px;
-    font-size: 1.2em; }
-    article .entry-title h2 {
-      display: inline;
-      font-size: 1.1em;
-      padding-left: 0px; }
-  .show-me-btn {
-    text-align: center; }
-    .show-me-btn #new-quote-button {
-      background: transparent;
-      -webkit-box-shadow: none;
-              box-shadow: none;
-      text-shadow: none;
-      color: #0c0;
-      border: 1px solid #0c0;
-      padding: 15px 25px;
-      margin: 0 auto; }
-  /*-----------------------Quotes Archive Page------------------------*/
-  .archive-title {
-    text-align: center; }
-  .authors, .categories, .tags {
-    width: 100%;
-    font-size: 1.25rem; }
-  h2 {
-    padding-left: 40px; }
-  ul {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    list-style: none;
-    margin-left: 0; }
-    ul a {
-      padding-right: 11px; }
-  /*-----------------------Submit Quote------------------------*/
-  #quote-submission-form input, #quote-submission-form textarea {
+/*------------------Logo Header----------------*/
+.site-branding {
+  margin: 0 auto; }
+  .site-branding img {
+    width: 95%; }
+
+/*--------------------Content--------------*/
+.show-me-btn {
+  text-align: center; }
+  .show-me-btn #new-quote-button {
     background: transparent;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    text-shadow: none;
     color: #0c0;
     border: 1px solid #0c0;
-    margin-bottom: 20px; }
-  #quote-submission-form input[type='submit'] {
-    -webkit-box-shadow: unset;
-            box-shadow: unset;
-    text-shadow: unset;
-    font-size: 1em;
-    padding: 10px; }
-  .user-log-in {
-    text-align: center;
-    line-height: 1.75; }
-    .user-log-in h2 {
-      font-size: 2em; }
-  /*-----------------------Footer------------------------*/
-  .main-navigation {
-    margin-top: 50px;
+    padding: 15px 25px;
+    margin: 0 auto; }
+
+/*-----------------------Quotes Archive Page------------------------*/
+.archive-title {
+  text-align: center; }
+
+.authors, .categories, .tags {
+  width: 100%;
+  font-size: 1.25rem; }
+
+h2 {
+  padding-left: 40px; }
+
+ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  list-style: none;
+  margin-left: 0; }
+  ul a {
+    padding-right: 11px; }
+
+/*-----------------------Submit Quote------------------------*/
+#quote-submission-form input, #quote-submission-form textarea {
+  background: transparent;
+  color: #0c0;
+  border: 1px solid #0c0;
+  margin-bottom: 20px; }
+
+#quote-submission-form input[type='submit'] {
+  -webkit-box-shadow: unset;
+          box-shadow: unset;
+  text-shadow: unset;
+  font-size: 1em;
+  padding: 10px; }
+
+.user-log-in {
+  text-align: left;
+  line-height: 1.75; }
+  .user-log-in h2 {
+    font-size: 2em; }
+
+/*-----------------------Footer------------------------*/
+.main-navigation {
+  margin-top: 50px; }
+  .main-navigation p {
+    margin: 3px 10px 0 0; }
+    .main-navigation p a {
+      display: inline;
+      color: #00cc00; }
+  .main-navigation ul {
+    width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end; }
-    .main-navigation p {
-      margin: 3px 10px 0 0; }
-      .main-navigation p a {
-        display: inline;
-        color: #00cc00; }
-    .main-navigation ul {
-      width: 100%;
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-pack: end;
-          -ms-flex-pack: end;
-              justify-content: flex-end; }
-      .main-navigation ul li {
-        border-right: 1px solid #fff; }
-      .main-navigation ul li a {
-        padding: 3px 10px; } }
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start; }
+    .main-navigation ul li {
+      border-right: 1px solid #fff; }
+    .main-navigation ul li:last-child {
+      border-right: none; }
+    .main-navigation ul li a {
+      padding: 3px 5px; }
 
-/*_________Media Query - DESKTOP_____________*/
+/*_________________Media Query - DESKTOP_____________*/
 @media screen and (min-width: 1080px) {
   .container {
     width: 1080px;
@@ -719,3 +784,41 @@ a:visited {
   .site-content:after {
     content: "\f10e";
     right: -175px; } }
+
+/*end of Desktop Media Query*/
+/*__________________Media Query - TABLET_____________*/
+@media screen and (min-width: 620px) {
+  .container {
+    width: 600px;
+    margin: 0 auto; }
+  /*--------------------Content--------------*/
+  .site-content {
+    position: relative; }
+  article {
+    padding: 0 30px;
+    font-size: 1.2em; }
+    article .entry-title h2 {
+      display: inline;
+      font-size: 1.1em;
+      padding-left: 0px; }
+  /*-----------------------Footer------------------------*/
+  .main-navigation {
+    margin-top: 50px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end; }
+    .main-navigation ul {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: end;
+          -ms-flex-pack: end;
+              justify-content: flex-end; }
+      .main-navigation ul li a {
+        padding: 3px 10px;
+        border-right: 1px solid #fff; } }
+
+/*end of Tablet Media Query*/

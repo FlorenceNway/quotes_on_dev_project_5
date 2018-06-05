@@ -53,3 +53,30 @@ function qod_modify_archives($query){
 	}
 }
 add_action('pre_get_posts','qod_modify_archives');
+
+
+function quotes_login_logo() {
+	echo '<style>
+		#login h1 a {
+			background: url(' . get_template_directory_uri() . '/images/qod-logo.svg) no-repeat !important;
+			background-size: 300px 53px !important; width: 300px !important; height: 53px !important;
+		}
+		#login .button.button-primary {
+			background-color: #0c0;
+		}
+	</style>';
+}
+add_action( 'login_head', 'quotes_login_logo' ); //(hook, function name)
+
+
+function quotes_login_logo_url($url) { //argument is previous url
+    return home_url(); //index.html
+
+}
+add_filter( 'login_headerurl', 'quotes_login_logo_url' ); //(filter name, function name)
+
+
+function quotes_login_logo_url_title() {
+    return 'quotes'; // set the title name u want to give
+}
+add_filter( 'login_headertitle', 'quotes_login_logo_url_title' );

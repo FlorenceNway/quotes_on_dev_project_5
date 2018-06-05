@@ -18,3 +18,86 @@ iframe,
 object {
 	max-width: 100%;
 }
+
+/*_________Media Query - DESKTOP_____________*/
+/*@media screen and (min-width: 1080px){
+	
+	.container{
+				width: 1080px;
+				margin:0 auto;
+			}
+
+	.site-content:before, .site-content:after{
+				color: #0c0;
+			    font-family: FontAwesome;
+			    font-size: 10em;
+			    line-height: 125px;
+			    position: absolute;
+			    top: 0;
+	}
+
+	.site-content:before{
+				content: "\f10d";
+				left: -175px;
+
+			}
+
+	.site-content:after{
+				content: "\f10e";
+				right: -175px;
+			
+		}
+
+
+}*/
+
+
+/*_________Media Query - TABLET_____________*/
+
+/*@media screen and (min-width: 620px){
+
+.container{
+		width: 580px;
+		margin: 0 auto;
+}*/
+
+/*--------------------Content--------------*/
+
+/*.site-content{
+	position: relative;
+}
+
+
+ article{		
+ 			padding: 0 30px;
+ 			font-size: 1.2em;
+ 		
+
+ 			.entry-title h2{
+ 				display: inline;
+ 				font-size: 1.1em;
+ 				padding-left: 0px;
+ 			}
+
+		 } */
+
+/*-----------------------Footer------------------------*/
+/*.main-navigation{
+	margin-top: 50px;
+	display: flex;
+	justify-content: flex-end;
+	
+
+	ul{
+		display: flex;
+		justify-content: flex-end;
+
+			li a{
+				padding: 3px 10px;
+				border-right: 1px solid #fff;
+			}
+		
+	}
+	
+	}
+}*/
